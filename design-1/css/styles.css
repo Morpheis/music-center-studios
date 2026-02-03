@@ -417,7 +417,7 @@ p:last-child { margin-bottom: 0; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../original-assets/music-center-studios-piano-blue.jpg');
+  background-image: url('../assets/music-center-studios-piano-blue.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(0.6);

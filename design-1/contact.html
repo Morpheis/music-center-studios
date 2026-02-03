@@ -26,6 +26,7 @@
         <a href="kindermusik.html">Kindermusik</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
+      <a href="contact.html#enroll" class="btn btn-primary nav-enroll-btn">Enroll Now</a>
       <a href="tel:2088616056" class="nav-phone">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         208.861.6056
@@ -42,6 +43,7 @@
     <a href="lessons.html">Lessons</a>
     <a href="kindermusik.html">Kindermusik</a>
     <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html#enroll" class="mobile-nav-enroll btn btn-primary">Enroll Now 🎵</a>
     <div class="mobile-nav-phone">
       <a href="tel:2088616056">📞 208.861.6056</a>
     </div>
@@ -60,6 +62,75 @@
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#FFFFFF"/>
       </svg>
+    </div>
+  </section>
+
+
+  <!-- ========== Enrollment Form ========== -->
+  <section class="section" id="enroll">
+    <div class="container">
+      <div class="enrollment-section reveal">
+        <div class="enrollment-header text-center">
+          <div class="enrollment-badge" style="margin-bottom:var(--space-lg)">Now Enrolling for 2025–2026</div>
+          <h2 class="section-title centered">Enroll Now 🎵</h2>
+          <p style="max-width:600px;margin:0 auto var(--space-2xl);color:var(--text-light)">Ready to start your musical journey? Fill out the form below and we'll get you set up with the perfect program.</p>
+        </div>
+        <form class="enrollment-form" id="enrollment-form" name="enrollment" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="enrollment">
+          <div class="enrollment-grid">
+            <div class="form-group">
+              <label for="enroll-student-name">Student Name *</label>
+              <input type="text" id="enroll-student-name" name="student-name" required placeholder="Student's full name">
+            </div>
+            <div class="form-group">
+              <label for="enroll-parent-name">Parent / Guardian Name *</label>
+              <input type="text" id="enroll-parent-name" name="parent-name" required placeholder="Parent or guardian name">
+            </div>
+            <div class="form-group">
+              <label for="enroll-email">Email Address *</label>
+              <input type="email" id="enroll-email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="enroll-phone">Phone Number *</label>
+              <input type="tel" id="enroll-phone" name="phone" required placeholder="208-555-1234">
+            </div>
+            <div class="form-group">
+              <label for="enroll-age">Student Age</label>
+              <input type="text" id="enroll-age" name="student-age" placeholder="e.g. 7">
+            </div>
+            <div class="form-group">
+              <label for="enroll-program">Program Interest *</label>
+              <select id="enroll-program" name="program-interest" required>
+                <option value="">Select a program...</option>
+                <option value="piano">Piano</option>
+                <option value="guitar">Guitar</option>
+                <option value="voice">Voice</option>
+                <option value="violin">Violin</option>
+                <option value="little-mozarts">Music for Little Mozarts</option>
+                <option value="adult-piano">Adult Piano</option>
+                <option value="kindermusik">Kindermusik</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="enroll-location">Preferred Location *</label>
+              <select id="enroll-location" name="preferred-location" required>
+                <option value="">Select a location...</option>
+                <option value="fairview">Fairview (W. Fairview Ave)</option>
+                <option value="state-street">State Street (Downtown)</option>
+              </select>
+            </div>
+            <div class="form-group enrollment-full-width">
+              <label for="enroll-notes">Additional Notes</label>
+              <textarea id="enroll-notes" name="notes" placeholder="Tell us about your student, schedule preferences, or any questions..."></textarea>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:var(--space-lg)">
+            <button type="submit" class="btn btn-primary" style="padding:0.85rem 2.5rem;font-size:1.05rem">
+              Submit Enrollment 🎵
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 

@@ -348,35 +348,94 @@
   <!-- ========== CONTACT / CTA ========== -->
   <section class="section section-accent" id="contact">
     <div class="container">
-      <div class="contact-content">
+      <div class="contact-content" style="max-width:none;">
         <h2>
           <span class="copy-toggle"
             data-original="Music is for a lifetime, for all ages, for all abilities."
             data-improved="Every age. Every ability. One lifelong journey.">Music is for a lifetime, for all ages, for all abilities.</span>
         </h2>
-        <p class="contact-subtitle">Now enrolling for 2025–2026 classes. Reach out and we'll help you find the right program.</p>
-        <div class="contact-info">
-          <a href="tel:2088616056" class="contact-method">
-            <span class="contact-icon">📞</span>
-            <span class="contact-detail">
-              <strong>Call Us</strong>
-              208.861.6056
-            </span>
-          </a>
-          <a href="mailto:info@musiccenterstudios.com" class="contact-method">
-            <span class="contact-icon">✉️</span>
-            <span class="contact-detail">
-              <strong>Email</strong>
-              info@musiccenterstudios.com
-            </span>
-          </a>
-          <div class="contact-method">
-            <span class="contact-icon">🎵</span>
-            <span class="contact-detail">
-              <strong>Social</strong>
-              <a href="https://facebook.com/musiccenterstudios" target="_blank" rel="noopener">Facebook</a> ·
-              <a href="https://instagram.com/musiccenterstudios" target="_blank" rel="noopener">Instagram</a>
-            </span>
+        <p class="contact-subtitle">Now enrolling for 2025–2026 classes. Fill out the form below and we'll help you find the right program.</p>
+      </div>
+
+      <div class="enrollment-layout">
+        <form class="enrollment-form" name="enrollment" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="enrollment">
+          <div class="enrollment-grid">
+            <div class="form-group">
+              <label for="enroll-student-name">Student Name *</label>
+              <input type="text" id="enroll-student-name" name="student-name" required placeholder="Student's full name">
+            </div>
+            <div class="form-group">
+              <label for="enroll-parent-name">Parent / Guardian Name *</label>
+              <input type="text" id="enroll-parent-name" name="parent-name" required placeholder="Parent or guardian name">
+            </div>
+            <div class="form-group">
+              <label for="enroll-email">Email Address *</label>
+              <input type="email" id="enroll-email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="enroll-phone">Phone Number *</label>
+              <input type="tel" id="enroll-phone" name="phone" required placeholder="208-555-1234">
+            </div>
+            <div class="form-group">
+              <label for="enroll-age">Student Age</label>
+              <input type="text" id="enroll-age" name="student-age" placeholder="e.g. 7">
+            </div>
+            <div class="form-group">
+              <label for="enroll-program">Program Interest *</label>
+              <select id="enroll-program" name="program-interest" required>
+                <option value="">Select a program...</option>
+                <option value="piano">Piano</option>
+                <option value="guitar">Guitar</option>
+                <option value="voice">Voice</option>
+                <option value="violin">Violin</option>
+                <option value="little-mozarts">Music for Little Mozarts</option>
+                <option value="adult-piano">Adult Piano</option>
+                <option value="kindermusik">Kindermusik</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="enroll-location">Preferred Location *</label>
+              <select id="enroll-location" name="preferred-location" required>
+                <option value="">Select a location...</option>
+                <option value="fairview">Fairview (W. Fairview Ave)</option>
+                <option value="state-street">State Street (Downtown)</option>
+              </select>
+            </div>
+            <div class="form-group enrollment-full-width">
+              <label for="enroll-notes">Additional Notes</label>
+              <textarea id="enroll-notes" name="notes" placeholder="Tell us about your student, schedule preferences, or any questions..."></textarea>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:24px;">
+            <button type="submit" class="btn btn-primary" style="width:100%;max-width:320px;">Submit Enrollment</button>
+          </div>
+        </form>
+
+        <div class="enrollment-sidebar">
+          <div class="contact-info" style="flex-direction:column;align-items:stretch;">
+            <a href="tel:2088616056" class="contact-method">
+              <span class="contact-icon">📞</span>
+              <span class="contact-detail">
+                <strong>Call Us</strong>
+                208.861.6056
+              </span>
+            </a>
+            <a href="mailto:info@musiccenterstudios.com" class="contact-method">
+              <span class="contact-icon">✉️</span>
+              <span class="contact-detail">
+                <strong>Email</strong>
+                info@musiccenterstudios.com
+              </span>
+            </a>
+            <div class="contact-method">
+              <span class="contact-icon">🎵</span>
+              <span class="contact-detail">
+                <strong>Social</strong>
+                <a href="https://facebook.com/musiccenterstudios" target="_blank" rel="noopener">Facebook</a> ·
+                <a href="https://instagram.com/musiccenterstudios" target="_blank" rel="noopener">Instagram</a>
+              </span>
+            </div>
           </div>
         </div>
       </div>

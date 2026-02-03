@@ -1,0 +1,13 @@
+# Netlify config — each design is a separate deploy target
+# To deploy a specific design, set the publish directory to that design folder
+# e.g., for design-1: publish = "design-1"
+
+[build]
+  publish = "design-1"
+
+# Redirect index to avoid 404 on sub-pages (SPA-style if needed)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["admin"]}
